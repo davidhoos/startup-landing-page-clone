@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -33,43 +34,182 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: Roboto;
+
 }
+
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+li {
+	list-style-type: none;
 }
 
+/* End of Reset */
 
+/* Navigation Section */
 
-/* Extra CSS to make borders around my div tags and such */
+/*Navigation Section */
 
-body{
-	background-color: LightGray;
-}
-
-div {
-	border: 1px solid Chocolate;
-}
-
-.top-navigation {
-	background-color:#fff;
-
-}
-
-.top-navigation > .content {
-	width: 970rem;
-	height:70rem;
+#navigation {
+	padding: 0 15px;
+	height: 5em;
+	display: block;
+	width: 748px;
 	margin: 0 auto;
 }
 
+.item {
+	float: left;
+	margin:30px 30px 0 30px;
+}
+#logo {
+	height:70px;
+	width:26px;
+	float: left;
+
+}
+
+/*End Navigation CSS*/
+
+
+/*Begin Hero CSS*/
+
+#hero {
+	display:block;
+	background-image: url('../images/first-background copy.jpg');
+	background-position: center bottom;
+	background-position-x: 50%;
+	background-position-y: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 40.938em;
+}
+
+#introduction {
+	width: 445px;
+	margin: 0 auto;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+	padding: 200px 0px;
+	height: 5em;
+	display: block;
+}
+
+#introduction h1 {
+	font-size: 3.125em;
+	color: white;
+	font-weight: 100;
+	text-align: center;
+}
+
+#introduction h3 {
+	font-size: 1.563em;
+	color: white;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 1.25rem;
+}
+
+#btn {
+	display: block;
+	margin: 15px auto;
+	text-shadow:none;
+	border-style: none;
+	border-radius: 4px;
+	padding:1rem 1.5rem;
+	line-height: 1.33;
+	background-color:#f15a29;
+	color:white;
+	font-size: 1.125rem;
+}
+
+.content {
+	margin: 0 auto;
+	width: 970px;
+}
+
+.cases {
+	margin-top: 7.875rem;
+	text-align: center;
+	width:70em;
+	margin: 150px auto;
+}
+
+.cases  h2 {
+	font-size: 3.125em;
+	color: black;
+	font-weight: 100;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 56px;
+}
+
+.devices  h3 {
+	font-size: 1.563em;
+	color: black;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 1.25rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cases .devices {
+    width: 22em;
+    display: inline-block;
+    /* styles to assist with debugging */
+  
+    box-sizing: border-box;
+    height: 4em;
+    float:left;
+}
+
+.social {
+    display: block;
+    margin: 23rem auto;
+	text-align: center;    
+	width:970px;
+}
+
+.footer-content {
+	width:23em;
+	margin: 0 auto;
+}
+
+.footer-content hr {
+	text-align: center;    
+	width:23em;
+}
+
+.icons {
+	margin-top: 2em;
+}
+
+.twitter {
+	display: inline-block;
+	float:left;
+}
+
+.facebook {
+	display: inline-block;
+	float:center;
+}
+
+#copy {
+	margin-top: 2em;
+}
+
+.instagram {
+	display: inline-block;
+	float: right;
+	border-radius:50%;
+	border-color:black;
+}
+
+p::before {
+	content:circle;
+	color:silver;
+
+
+}
